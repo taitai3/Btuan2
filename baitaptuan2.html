@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            height: 800px;
+            width: 1089px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        
+        .header {
+            height: 150px;
+            width: 1089px;
+            background-color: brown;
+            border-bottom: 1px solid black;
+        }
+        
+        .menu li {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(56, 131, 84);
+            display: inline-table;
+            line-height: 50px;
+            list-style-type: none;
+            text-indent: 50px;
+            border: 1px dotted red;
+            position: relative;
+            float: left;
+        }
+        
+        li a {
+            text-decoration: none;
+            font-style: oblique;
+            color: blue;
+        }
+        
+        .menu li:hover {
+            background-color: aqua;
+        }
+        
+        li:hover>a {
+            color: rgb(107, 148, 31);
+        }
+        
+        .menu li .sub-menu {
+            position: absolute;
+            display: none;
+        }
+        
+        .menu li:hover .sub-menu {
+            display: block;
+        }
+        
+        li.sub-menu li.sub-menu {
+            display: block;
+        }
+        
+        .menu li .sub-menu li:hover .sub-menu {
+            display: block;
+            top: 200px;
+            left: 150px;
+            color: #ff6600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header"></div>
+        <img src="C:\Users\Student\Desktop\2023_BTHTCNWeb_\2023_BTHTCNWeb_\Tuan2\Bai1" alt="" srcset="" height="150" width=" 1089">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="https://www.youtube.com/watch?v=CeSMTENdRZs">item</a></li>
+                <li><a href="#">iteam2</a></li>
+                <li>
+                    <a href="#">item3</a>
+                    <ul class="sub-menu">
+                        <li><a href="">sub-menu1</a></li>
+                        <li><a href="">sub-menu2</a></li>
+                        <li><a href="">sub-menu3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">item4</a>
+                </li>
+                <li>
+                    <a href="#">item5</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <aside>
+
+            </aside>
+            <div class="section1">
+
+            </div>
+            <div class="section">
+
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+
+</html>
